@@ -1,0 +1,862 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul{
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+    background-image: url(../images/phonebanner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+    position: relative;
+    padding: 0;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#fff;
+}
+
+.navbar-light .navbar-nav .nav-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(0, 255, 255);
+    transition: .4s all ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: aqua;
+    transition: .4s all ease-in-out;
+
+}
+
+.nav-item{
+    padding: 0 8px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after{
+    width: 47%;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::before{
+    width: 47%;
+}
+
+.height{
+    min-height: 90vh;
+    align-items: center;
+
+}
+
+.height h4{
+    color: #008ed6;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.height h1{
+    color: #fff;
+    font-size: 50px;
+    margin: 30px 0px;
+
+}
+
+.height p{
+    color: #fff;
+}
+
+.btn-download{
+    background: #008ed6;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 0;
+    padding: 13px 20px;
+    margin-top: 50px;
+    border: 1px solid transparent;
+
+}
+
+.btn-features{
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid #999;
+    padding: 0;
+    padding: 13px 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.btn-download:hover{
+ background-color: transparent;
+ color: #fff;
+ border: 1px solid #999;
+
+}
+
+.btn-features:hover{
+    background: #008ed6;
+    color: #fff;
+    border: 1px solid #008ed6;
+
+}
+
+.phone{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+
+}
+
+
+      
+    .features h3{
+        letter-spacing:3px;
+        font-size:16px;
+        color: #008ed6;
+        font-weight:700;
+        font-family: Source Sans Pro;
+        text-transform:uppercase;
+        margin-bottom:13px;
+    }
+      .features h1 {
+        color: #1a1a1a;
+        font-size: 36px;
+        font-family: Myriad Pro;
+        font-weight: 400;
+      }
+
+      .content h1 {
+        color: #1a1a1a;
+        font-size: 24px;
+        font-family: Source Sans Pro;
+        margin-bottom: 16px;
+      }
+
+      .heading span{
+          display: block;
+          margin:auto;  
+          height: 2px;
+          width: 45px;
+          margin-top: 20px;
+          position: relative;
+      }
+
+      
+       
+      .heading span::before{
+          content: "";
+          position:absolute;
+          width: 0%;
+          height: 100%;
+          left: 0;
+          bottom: 0;
+          background-color: rgb(0, 142, 214);
+          transition: .4s all ease-in-out;
+      }
+
+      .heading span::after{
+        content: "";
+        position:absolute;
+        width: 0%;
+        height: 2px;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(0, 142, 214);
+        transition: .4s all ease-in-out;
+      }
+
+      .product-section:hover .heading span::after, .product-section:hover .heading span::before{
+        width: 47%;
+      }
+
+
+.tv-icon i{
+    color:rgb(0, 142, 214);
+    font-size: 30px;
+}
+
+.product-section p{
+    color: rgb(153, 153, 153);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.device-section{
+    display: flex;
+    align-items: center;
+}
+
+
+.device-section h5{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(0, 142, 214);
+    margin: 15px 0px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.device-section h1{
+    font-family: sans-serif;
+    color: rgb(26, 26, 26);
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.device span{
+    display: block;
+    height: 2px;
+    width: 45px;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+
+.device span::after{
+    content: "";
+    position:absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(0, 142, 214);
+    transition: .4s all ease-in-out;
+}
+
+.device span::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 142, 214);
+    transition: .4s all ease-in-out;
+}
+
+.device-section:hover .device span::after, .device-section:hover .device span::before{
+    width: 47%;
+  }
+
+
+
+
+.device-section p{
+    color: rgb(153, 153, 153);
+    margin: 15px 0;
+    font-family: sans-serif;
+}
+
+.device-section ul{
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+}
+
+.device-section ul li{
+    list-style:none;
+    margin-top: 7px;
+    
+}
+
+
+.featureli i{
+    color: rgb(0, 142, 214);
+    margin-right: 10px;
+}
+
+.customize-section{
+    background-color: rgb(242, 242, 242);
+
+}
+
+.customize h5{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(0, 142, 214);
+    margin-top: 90px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+
+.customize h2{
+    font-family: sans-serif;
+    font-weight: 600;
+    color: rgb(26, 26, 26);
+    margin: 15px opx;
+
+}
+
+.customize span{
+    display: block;
+    height: 2px;
+    width: 45px;
+    margin-top: 15px;
+    position: relative;
+}
+
+
+.customize span::before{
+    content: "";
+    position:absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(0, 142, 214);
+    transition: .4s all ease-in-out;
+}
+
+.customize span::after{
+    content: "";
+    position:absolute;
+    width: 0%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 142, 214);
+    transition: .4s all ease-in-out;
+}
+
+.customize-section:hover .customize span::after, .customize-section:hover .customize span::before{
+    width: 47%;
+  }
+
+
+
+
+
+.customize-section p{
+    color: rgb(153, 153, 153);
+    margin: 40px 0px;
+}
+
+.testimonial-section{
+    background-image: url(../images/pricingandplans.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 0;
+}
+
+.testimonial-section p{
+    color: #fff;
+    font-style: italic;
+    
+
+}
+
+
+
+
+.testimonial-section h2{
+     color: #fff;
+     font-family: sans-serif;
+
+ }
+
+.testimonial-section h5{
+     color: rgb(0, 142, 214);
+     font-size: 15px;
+     text-transform: uppercase;
+     font-weight: 700;
+     font-family: sans-serif;
+     letter-spacing: 1px;
+ }
+
+ .tagss span{
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 45px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+
+.tagss span::after{
+    content: "";
+    position:absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(0, 142, 214);
+    transition: .4s all ease-in-out;
+}
+
+.tagss span::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 142, 214);
+    transition: .4s all ease-in-out;
+}
+
+.testimonial-section:hover .tagss span::after, .testimonial-section:hover .tagss span::before{
+    width: 47%;
+  }
+
+  .client{
+    display: flex;
+    align-items: center;
+}
+
+.client-img{
+    margin-right: 20px;
+
+}
+
+.client-description h4{
+    color: #fff;
+    font-size: 16px;
+}
+
+.client-description h3{
+    color: #fff;
+    font-size: 18px;
+}
+
+
+
+
+.owl-dots{
+    display: flex;
+    justify-content: center;
+    
+      
+  }
+
+  .owl-dots .owl-dot{
+    margin: 10px;
+  }
+
+  .owl-dot{
+    margin: 5px;
+  }
+
+.owl-dots .owl-dot span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50px;
+    
+    
+}
+ 
+  .owl-dots .active span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: green;
+    border-radius: 50px;
+    
+  }
+
+ 
+ 
+
+.theme-section{
+    background-color: #15141a;
+    padding: 30px 0;
+
+}
+
+.theme-section h2 span{
+    color: #fff;
+    font-weight: 700;
+}
+
+.btn-feat{
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px solid rgb(153, 153, 153);
+    padding: 15px 20px;
+    margin-left: 15px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-right: 10px;
+}
+
+.btn-load{
+    background-color: rgb(0, 142, 214);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 15px 20px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-family: sans-serif;
+    }
+ 
+.tag h5{
+     color: rgb(0, 142, 214);
+     font-size: 15px;
+     text-transform: uppercase;
+     font-weight: 700;
+     font-family: sans-serif;
+     letter-spacing: 1px;
+      
+}   
+
+/*.tag h2{
+    color: #fff;
+    font-style: italic;
+
+
+}*/
+
+.tag span{
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 45px;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+
+.tag span::after{
+    content: "";
+    position:absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(0, 142, 214);
+    transition: .4s all ease-in-out;
+}
+
+.tag span::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 142, 214);
+    transition: .4s all ease-in-out;
+}
+
+.pricing-plans:hover .tag span::after, .pricing-plans:hover .tag span::before{
+    width: 47%;
+  }
+
+
+
+
+.price-table{
+    border: 1px solid #9999;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.free{
+    border-bottom: 1px solid #9999;
+    padding: 10px 0;
+
+}
+
+.free h2{
+    font-weight: 600;
+
+}
+
+.dollar{
+    transition: .4s all ease-in-out;
+}
+
+.dollar h1{
+    font-weight: 600;
+    padding-top: 22px;
+    font-family: sans-serif;
+
+}
+
+.dollar h5{
+    color: #9999;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #9999;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.price-table p{
+    color: #9999;
+    font-family: sans-serif;
+    padding: 41px;
+}
+
+.btn-order{
+    color: #008ed6;
+    padding: 10px 20px;
+    border: 1px solid #9999;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    transition: .4s all ease-in-out;
+
+}
+
+.contact-section{
+    padding: 50px 0;
+    background-color: #ededed;
+    position: relative;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+
+.plans span{
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 45px;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+
+.plans span::after{
+    content: "";
+    position:absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(0, 142, 214);
+    transition: .4s all ease-in-out;
+}
+
+.plans span::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 142, 214);
+    transition: .4s all ease-in-out;
+}
+
+.contact-section:hover .plans span::after, .contact-section:hover .plans span::before{
+    width: 47%;
+  }
+
+.price-table{
+
+     border: 1px solid #9999;
+     text-align: center;
+     padding: 0;
+}
+
+
+.free h2{
+    font-size: 20px;
+    font-weight: 600;
+    transition: .2s all ease-in-out;
+
+
+
+}
+
+.dollar{
+    border-bottom: 1px solid #9999;
+    padding: 25px 0;
+    transition: .2s all ease-in-out;
+}
+
+.dollar h1{
+    font-size: 50px;
+
+}
+
+.dollar h1 sup{
+    font-size: 30px;
+
+
+}
+
+.dollar h6{
+    font-weight: 400;
+    color: #9999;
+    transition: .2s all ease-in-out;
+
+}
+
+.price-table p{
+
+    padding: 20px 0;
+    color: #9999;
+
+}
+
+.price-table a{
+
+
+}
+
+.btn-order{
+    border-bottom: 1px solid #9999;
+    margin-bottom: 30px;
+}
+
+.price-table:hover h2{
+    color: #008ed6;
+
+}
+
+.price-table:hover .dollar{
+ background-color: #008ed6;
+}
+
+.price-table:hover .dollar h6{
+    color: #fff;
+}
+
+.price-table:hover .btn-order{
+    background-color: #008ed6;
+    color: #fff;
+}
+
+
+.info{
+
+    text-align: center;
+}
+
+.info i{
+    font-size: 40px;
+    color: #008ed6;
+    padding-bottom: 25px;
+    
+}
+
+.info p{
+    color: #9999;
+    font-weight: 700;
+
+}
+
+.anchor p a{
+    color: #9999;
+}
+
+.contact-form{
+    background-color: #15141a;
+    text-align: end;
+    padding: 50px;
+    width: 900px;
+    position: absolute;
+    bottom: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+.contact-form form input{
+    background: transparent;
+    background-color: transparent;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+}
+
+.contact-form form textarea{
+    background: transparent;
+    background-color: transparent;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+}
+
+
+.contact-form form input [type="submit"]{
+    
+    background: #008ed6;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid #fff;
+}
+   
+
+
+footer{
+    background-color: #15141a;
+    min-height: 150px;
+}
+
+.footy ul{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footy ul li{
+    list-style: none;
+}    
+
+.footy ul li a{
+
+    font-size: 30px;
+    color: #9999;
+    margin: 0 10px;
+
+}
+
+
+.footy p{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+  
